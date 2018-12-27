@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { theme } from '../../config';
 
@@ -10,9 +9,8 @@ const globalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: ${theme.colors.darkestgray};
-  }
-  body {
-    padding-top: ${theme.Header.height}px;
+    font-family: ${theme.Text.fontFamily};
+    color: ${theme.colors.lightergray}
   }
 `;
 

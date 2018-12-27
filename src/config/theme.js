@@ -7,7 +7,7 @@ const darkergray = '#999';
 const darkestgray = '#1c2230';
 const placeholdergray = '#323c47';
 const copywritegray = '#9b9b9b';
-const turquoise = '#0ab';
+const fashpink = '#ec6c68';
 
 const headerHeight = [120, 73];
 const sidebarWidth = 70;
@@ -31,7 +31,7 @@ export default {
     darkestgray,
     placeholdergray,
     copywritegray,
-    turquoise,
+    fashpink,
   },
   fonts: {
     sans: 'system-ui, sans-serif',

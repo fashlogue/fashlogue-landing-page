@@ -4,23 +4,21 @@ import { render } from 'react-dom';
 import  App  from './containers/App';
 //import store from './store';
 
-
-
 function renderMain(App) {
-    return (
-      <div>
-        {/* <Provider>
+  return (
+    <div>
+      {/* <Provider>
             <App />
         </Provider> */}
-        <App/>
-      </div>
-    );
-  }
+      <App/>
+    </div>
+  );
+}
 
-  if (module.hot) {
-    module.hot.accept('./containers/App', () => {
-      render(renderMain(require('./containers/App').default), document.getElementById('root'));
-    });
-  }
+if (module.hot) {
+  module.hot.accept('./containers/App', () => {
+    render(renderMain(require('./containers/App').default), document.getElementById('root'));
+  });
+}
 
 render(renderMain(App), document.getElementById('root'));

@@ -1,15 +1,9 @@
 import * as React from 'react';
-import {
-    Flex,
-  } from 'rebass';
-import styledComponents from 'styled-components';
-import { theme } from '../../config';
-
+import { PropTypes } from 'prop-types';
 
 const baseStyles = {
   display: 'flex',
-  flexDirection: 'row',
-  
+  flexDirection: 'row', 
 };
 
 const base = ({
@@ -22,6 +16,11 @@ const base = ({
       ...baseStyles,
     }}>{children}</div>
   );
+};
+
+base.propTypes = {
+  children: PropTypes.element,
+  style:  PropTypes.object
 };
 
 export default base;
