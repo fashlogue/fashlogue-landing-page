@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 
 const baseStyles = {
   display: 'flex',
-  flexDirection: 'row', 
+  flexDirection: 'column', 
 };
 
 const base = ({

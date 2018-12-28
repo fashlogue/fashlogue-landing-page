@@ -1,19 +1,19 @@
 import * as React from 'react';
-
-import { BrowserRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-
+import { Hero } from '../../components/Hero';
 import { theme } from '../../config';
 import App from '../../components/App';
-// import routes from '../../routes';
+import {
+  Flex,
+  Box
+} from 'rebass'
+
 
 const appContainer = () => {
   return (
     <ThemeProvider theme={theme}>
-      <App>
-        <Router>
-          {/* {routes} */}
-        </Router>
+      <App> 
+        <Hero/>
       </App>
     </ThemeProvider>
   );

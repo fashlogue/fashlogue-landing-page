@@ -44,13 +44,13 @@ const header = () => {
           align="middle"
           justifyContent="flex-end"
         >
-          <Box mx={3}>
+          <Box mx={4}>
             <p>Register</p>
           </Box>
-          <Box mr={3}>
+          <Box mr={4}>
             <p>Team</p>
           </Box>
-          <Box mr={5}>
+          <Box mr={4}>
             <p>Sign In</p>
           </Box>
         </Flex>

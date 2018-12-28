@@ -26,5 +26,4 @@ const appComponent = ({ children }) => {
 appComponent.propTypes = {
   children: PropTypes.element,
 };
-
 export default appComponent;
