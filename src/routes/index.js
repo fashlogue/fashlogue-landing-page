@@ -3,8 +3,7 @@ import * as React from 'react';
 import { Route } from 'react-router-dom';
 import { ModalRoute } from 'react-router-modal';
 import { HomeScreen } from '../screens/HomeScreen';
-// import SignupScreen from '../screens/SignupScreen';
-// import LoginScreen from '../screens/LoginScreen';
+import { AuthChoiceScreen } from '../screens/AuthChoiceScreen';
 
 const baseModalProps = {
   inClassName: 'react-router-modal__modal-in',
@@ -16,19 +15,26 @@ const baseModalProps = {
 };
 
 const routeList = [
-
-
   {
     component: HomeScreen,
     isModal: false,
-    isExact: false,
+    isExact: true,
     path: '/',
   },
+  {
+    component: AuthChoiceScreen,
+    isModal: true,
+    isExact: true,
+    path: '*/app-auths',
+  }
+  
 ];
 
 export default class Routes extends React.Component {
   
-
+  constructor (props) {
+    super(props);
+  }
   /**
    * Renders routes defined in the `routeList` params.
    *
@@ -65,7 +71,9 @@ export default class Routes extends React.Component {
     return (
       <Route render={(props) => {
         return (
-          <div>
+          <div style={{
+            width: '100%',
+          }}>
             {this.renderRoutes(routeList, props)}
           </div>
         );

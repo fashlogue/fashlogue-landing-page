@@ -7,7 +7,10 @@ const darkergray = '#999';
 const darkestgray = '#1c2230';
 const placeholdergray = '#323c47';
 const copywritegray = '#9b9b9b';
+const instagramBlue = '#125688';
 const fashpink = '#ec6c68';
+const white = '#fff';
+const steemConnectBlue = '#108ee9';
 
 const headerHeight = [120, 73];
 const sidebarWidth = 70;
@@ -23,6 +26,9 @@ export default {
   space,
   colors: {
     blue,
+    instagramBlue,
+    steemConnectBlue,
+    white,
     gray,
     lightgray,
     lightergray,

@@ -17,17 +17,17 @@ const appContainer = (props) => {
     <Router>
       <Provider store={props.store}>
         <ThemeProvider theme={theme}>
-        <Route render={({ ...props }) => {
-                  return (
-                    <div>
-                      <App {...props}>
-                        <Routes />
-                      </App>
-                      <ModalContainer />
-                    </div>
-                  );
-                }}
-              />
+          <Route render={({ ...props }) => {
+                return (
+                  <div>
+                    <App {...props}>
+                      <Routes />
+                    </App>
+                    <ModalContainer />
+                  </div>
+                );
+              }}
+          />
         </ThemeProvider>
       </Provider>
     </Router>

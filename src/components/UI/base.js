@@ -19,7 +19,6 @@ const base = ({
 };
 
 base.propTypes = {
-  children: PropTypes.element,
   style:  PropTypes.object
 };
 

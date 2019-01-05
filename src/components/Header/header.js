@@ -4,7 +4,8 @@ import { theme } from '../../config';
 import { FashWordMark } from '../Icons';
 import {
   Flex,
-  Box
+  Box,
+  Link
 } from 'rebass';
 
 const styles = {
@@ -15,7 +16,7 @@ const styles = {
   }
 };
 
-const header = () => {
+const header = (props) => {
   return (
     <Flex style={{...styles.headerComponentContainer}}>
       <Flex 
@@ -29,8 +30,8 @@ const header = () => {
           <Flex mx={5}>
             <Box style={{Maxwidth: '100%'}}>
               <FashlogueLogo 
-                width={50}
-                height={50}
+                width={40}
+                height={40}
               />
             </Box>
             <Flex mx={2} align="middle">
@@ -45,13 +46,13 @@ const header = () => {
           justifyContent="flex-end"
         >
           <Box mx={4}>
-            <p>Register</p>
+            <Link onClick={ e=>props.history.push('/teams')}>Teams</Link>
           </Box>
           <Box mr={4}>
-            <p>Team</p>
+            <Link onClick={ e=>props.history.push('/signup')}>Sign Up</Link>
           </Box>
           <Box mr={4}>
-            <p>Sign In</p>
+            <Link onClick={ e=>props.history.push('/app-auths')}>Sign In</Link>
           </Box>
         </Flex>
                 

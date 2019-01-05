@@ -16,7 +16,7 @@ const fashlogueWordMark = () => {
       <Text
         styles={{...styles.wordMarkStyles}} 
         color={styles.wordMarkStyles.color}
-        fontSize={5}
+        fontSize={4}
       >
                 FASHLOGUE
       </Text>

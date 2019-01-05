@@ -1,11 +1,14 @@
-import { connect } from 'react-redux';
 import { Home } from '../../components/Home';
+import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => {
   return {
-    isLoading: state.isLoading,
+    homeScreen: state.homeScreen
   };
 };
-const mapDispatchToProps = ({ });
-
+const mapDispatchToProps = dispatch => {
+  return {
+      
+  }
+}
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
