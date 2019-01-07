@@ -12,7 +12,7 @@ const hero = () => {
     return (
         <Flex flexDirection='column'>
             <Box mx='auto' style={{width: '40%'}}>
-                <img mx='auto' style={{maxWidth: '100%'}} src={heroImage}/>
+                <img alt="hero" mx='auto' style={{maxWidth: '100%'}} src={heroImage}/>
             </Box>
             <Box style={{textAlign: 'center'}} width={1/2} mx='auto'>
                 <Text  fontSize={5} style={{fontWeight: 700 }}>Create your catalogue and save them Accessible from anywhere in the world.</Text>

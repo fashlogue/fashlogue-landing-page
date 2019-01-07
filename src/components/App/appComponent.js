@@ -6,7 +6,7 @@ import {
 } from '../UI';
 import { Header } from '../Header';
 
-const appComponent = ({ children }) => {
+const appComponent = ({ children, ...props }) => {
 
   return (
     <Base>
@@ -14,7 +14,7 @@ const appComponent = ({ children }) => {
       <Base style={{
         width: '100%'
       }}>
-        <Header/>
+        <Header {...props}/>
       </Base>
       <Base>
         {children}
